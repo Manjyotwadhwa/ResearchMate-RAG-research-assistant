@@ -1,0 +1,77 @@
+{
+  "description": "Evaluation questions for the two SYNTHETIC sample papers in data/sample_documents/. Ground truth: a retrieved chunk counts as relevant if it contains at least one of the evidence_phrases (case-insensitive).",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "How many parameters does LeafLite have?",
+      "expected_answer": "LeafLite has 1.2 million parameters.",
+      "relevant_source": "sample_paper_a_leaflite.pdf",
+      "evidence_phrases": ["1.2 million parameters"],
+      "answerable": true
+    },
+    {
+      "id": "q2",
+      "question": "What accuracy did LeafLite achieve on the VillageLeaf dataset?",
+      "expected_answer": "LeafLite achieved 94.1 percent accuracy on VillageLeaf.",
+      "relevant_source": "sample_paper_a_leaflite.pdf",
+      "evidence_phrases": ["94.1 percent"],
+      "answerable": true
+    },
+    {
+      "id": "q3",
+      "question": "Which optimizer and learning rate were used to train LeafLite?",
+      "expected_answer": "LeafLite was trained with the Adam optimizer using a learning rate of 0.001.",
+      "relevant_source": "sample_paper_a_leaflite.pdf",
+      "evidence_phrases": ["adam optimizer with a learning rate of 0.001"],
+      "answerable": true
+    },
+    {
+      "id": "q4",
+      "question": "What is the inference latency of LeafLite on a mid-range phone?",
+      "expected_answer": "LeafLite runs inference in 38 ms per image on a mid-range phone.",
+      "relevant_source": "sample_paper_a_leaflite.pdf",
+      "evidence_phrases": ["38 ms per image"],
+      "answerable": true
+    },
+    {
+      "id": "q5",
+      "question": "How large is the FieldCrop-15 dataset?",
+      "expected_answer": "FieldCrop-15 has 9,000 labeled images across 15 classes.",
+      "relevant_source": "sample_paper_b_cropformer.pdf",
+      "evidence_phrases": ["9,000 labeled images across 15"],
+      "answerable": true
+    },
+    {
+      "id": "q6",
+      "question": "What masking ratio does CropFormer use during pretraining?",
+      "expected_answer": "CropFormer uses a masking ratio of 75 percent.",
+      "relevant_source": "sample_paper_b_cropformer.pdf",
+      "evidence_phrases": ["masking ratio of 75 percent"],
+      "answerable": true
+    },
+    {
+      "id": "q7",
+      "question": "How does CropFormer perform when only 10 percent of the labels are available?",
+      "expected_answer": "With only 10 percent of the labels CropFormer reaches 91.8 percent accuracy, compared with 78.5 percent for a supervised ViT.",
+      "relevant_source": "sample_paper_b_cropformer.pdf",
+      "evidence_phrases": ["91.8 percent accuracy"],
+      "answerable": true
+    },
+    {
+      "id": "q8",
+      "question": "Why is CropFormer not suitable for mobile devices?",
+      "expected_answer": "Pretraining needs 8 GPUs for 5 days and the model is not suitable for mobile devices because of its compute cost.",
+      "relevant_source": "sample_paper_b_cropformer.pdf",
+      "evidence_phrases": ["not suitable for mobile devices"],
+      "answerable": true
+    },
+    {
+      "id": "q9",
+      "question": "Which paper uses reinforcement learning to train its model?",
+      "expected_answer": "Sufficient evidence was not found in the uploaded documents.",
+      "relevant_source": null,
+      "evidence_phrases": [],
+      "answerable": false
+    }
+  ]
+}

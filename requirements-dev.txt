@@ -1,0 +1,4 @@
+# Development / test extras (not needed on Streamlit Cloud)
+-r requirements.txt
+pytest==9.1.1
+reportlab==5.0.1
